@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var currentFetch = window.fetch ? window.fetch.bind(window) : undefined;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function () {
+              return currentFetch;
+            },
+            set: function (nextFetch) {
+              currentFetch = nextFetch;
+            },
+          });
+        } catch (_) {}
+      })();
+    </script>
+    <title>KHAN ENTERPRIZE — Construction Materials Supplier</title>
+    <meta name="description" content="Official corporate website of KHAN ENTERPRIZE, led by Managing Director Tanbir Ahmed Khan. Premier bulk supplier of Rod, Cement, Brick, and Sand for Real Estate and Government sector projects in Bangladesh." />
+    <meta property="og:title" content="KHAN ENTERPRIZE — Construction Materials Supplier" />
+    <meta property="og:description" content="Official corporate website of KHAN ENTERPRIZE, led by Managing Director Tanbir Ahmed Khan. Premier bulk supplier of Rod, Cement, Brick, and Sand for Real Estate and Government sector projects in Bangladesh." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-stone-50 text-slate-900 antialiased selection:bg-amber-400 selection:text-slate-950">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
