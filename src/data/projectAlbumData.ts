@@ -35,7 +35,7 @@ export const PROJECT_ALBUM_PHOTOS: ProjectAlbumPhoto[] = [
   {
     id: 'album-md-office-2',
     index: '02',
-    imageUrl: '/assets/aistudio/TANBIR-PHOTO__3__ebc91f2c.jpg',
+    imageUrl: '/assets/aistudio/TANBIR-PHOTO__3__a4089265.jpg',
     category: 'site-inspection',
     categoryLabelEn: 'Corporate Office & Quality Control',
     categoryLabelBn: 'কর্পোরেট অফিস ও মান নিয়ন্ত্রণ',
